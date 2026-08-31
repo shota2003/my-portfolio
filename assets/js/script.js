@@ -30,6 +30,25 @@ document.addEventListener("DOMContentLoaded", () => {
     const popupCloseButtons = document.querySelectorAll(".popup-close-btn");
     const popupCloseButtonsImg = document.querySelectorAll(".popup-close-btn");
 
+    const deviceType = navigator.userAgent;
+
+    if (deviceType.includes('Android') || deviceType.includes('iOS')) {
+        const responsiveContent = document.getElementById('responsive_content');
+        const swiperResponsiveContent = document.getElementById('swiper_responsive_content');
+        if (responsiveContent) {
+            responsiveContent.style.display = 'flex';
+            swiperResponsiveContent.style.display = 'flex';
+        }
+    }
+
+    if (deviceType.includes('Windows') || deviceType.includes('Mac') || deviceType.includes('Ubuntu')) {
+        const desktopContent = document.getElementById('desktop_content');
+        const swiperDesktopContent = document.getElementById('swiper_desktop_content');
+        if (desktopContent) {
+            desktopContent.style.display = 'flex';
+            swiperDesktopContent.style.display = 'flex';
+        }
+    }
 
     window.addEventListener("scroll", () => {
         if (window.scrollY > 30) {
@@ -133,7 +152,7 @@ document.addEventListener("DOMContentLoaded", () => {
             containerWrapper.style.display = "block";
             
             slideContainers.forEach(container => {
-                container.style.display = "none";
+                container.style.display = "flex";
             });
 
             if (slideContainers[index]) {
