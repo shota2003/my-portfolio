@@ -502,7 +502,6 @@ body {
     display: none;
 }
 
-
 .slide-container {
     display: none;
     position: fixed;
@@ -531,7 +530,6 @@ body {
     color: #aed5ff;
     transition: all 0.3s ease;
 }
-
 
 .slide-container {
     text-align: center;
@@ -769,6 +767,17 @@ footer .contact .phone-number:hover {
         background-color: #004a9a;
         transition: all 0.5s ease;
         border-radius: 10px;
+    }
+
+    .lang-toggle-responsive select {
+        background: transparent;
+        border: none;
+        color: #f7f7f7;
+        cursor: pointer;
+    }
+
+    .lang-toggle-responsive option {
+        background-color: #111;
     }
 
 
