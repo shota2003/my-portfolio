@@ -72,7 +72,10 @@
             </div>
 
             <div class="lang-toggle-responsive">
-                <a id="lang_toggle_responsive" href="?lang=ka"><img class="georgia_flag" src="assets/img/Flag_of_Georgia.svg" width="24" alt="GE"> ქარ</a>
+                <select id="language-switcher">
+                    <option value="en">English</option>
+                    <option value="ka">ქართული</option>
+                </select>
             </div>
         </section>
 
@@ -105,7 +108,22 @@
             <div class="container">
                 <div class="box" id="box_1" data-aos="fade-right" data-popup-index="1">
                     <img src="assets/img/services/corporate.png" class="box-icon" alt="corporate">
-                    <p>Description</p>
+                    <p data-i18n="corporate">Company's Corporate Websites</p>
+                </div>
+
+                <div class="box" id="box_2" data-aos="fade-right" data-popup-index="2">
+                    <img src="assets/img/services/landing.png" class="box-icon" alt="corporate">
+                    <p data-i18n="landing">Landing Pages</p>
+                </div>
+
+                <div class="box" id="box_3" data-aos="fade-right" data-popup-index="3">
+                    <img src="assets/img/services/online-shop.png" class="box-icon" alt="corporate">
+                    <p data-i18n="services">Online Store</p>
+                </div>
+
+                <div class="box" id="box_4" data-aos="fade-right" data-popup-index="4">
+                    <img src="assets/img/services/other.png" class="box-icon" alt="corporate">
+                    <p data-i18n="other">Other types of Websites</p>
                 </div>
             </div>
 
@@ -115,7 +133,31 @@
                         <img src="assets/img/close.png" class="popup-close-btn" alt="Popup Close Button">
                     </a>
                     <img src="assets/img/services/corporate.png" class="box-popup-icon" alt="corporate">
-                    <p>Description</p>
+                    <p data-i18n="corporate_description">Company's corporate websites that represents company's purpose, services, history, etc.</p>
+                </div>
+
+                <div class="services-popup">
+                    <a href="javascript:void();">
+                        <img src="assets/img/close.png" class="popup-close-btn" alt="Popup Close Button">
+                    </a>
+                    <img src="assets/img/services/landing.png" class="box-popup-icon" alt="corporate">
+                    <p data-i18n="landing_description">Landing pages of products at sale for advertisement</p>
+                </div>
+
+                <div class="services-popup">
+                    <a href="javascript:void();">
+                        <img src="assets/img/close.png" class="popup-close-btn" alt="Popup Close Button">
+                    </a>
+                    <img src="assets/img/services/online-shop.png" class="box-popup-icon" alt="corporate">
+                    <p data-i18n="online_shop_description">Online Web Store with everything necessary, integrated payment system, user authorization mechanism, etc.</p>
+                </div>
+
+                <div class="services-popup">
+                    <a href="javascript:void();">
+                        <img src="assets/img/close.png" class="popup-close-btn" alt="Popup Close Button">
+                    </a>
+                    <img src="assets/img/services/other.png" class="box-popup-icon" alt="corporate">
+                    <p data-i18n="other_description">Other types of websites</p>
                 </div>
             </div>
         </section>
@@ -130,41 +172,50 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
 
-                    <!-- Responsive -->
-                    <div class="swiper-slide" id="responsive-swiper-slide">
-                        <img src="assets/img/portfolio/example_mobile.jpg">
+                    <div id="swiper_responsive_content" style="display: none;">
+                        <!-- Responsive -->
+                        <div class="swiper-slide" id="responsive-swiper-slide">
+                            <img src="assets/img/portfolio/slender_bm_mobile.jpg">
+                        </div>
                     </div>
 
-                    <!-- Default -->
-                    <div class="swiper-slide" id="swiper-slide">
-                        <img src="assets/img/portfolio/example.jpg">
+                    <div id="swiper_desktop_content" style="display: none;">
+                        <!-- Default -->
+                        <div class="swiper-slide" id="swiper-slide">
+                            <img src="assets/img/portfolio/slender_bm.jpg">
+                        </div>
                     </div>
+
                 </div>
                 <!-- If we need navigation buttons -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>
 
-            <div class="responsive-container-wrapper" id="responsive_container_wrapper">
-                <div class="responsive-slide-container" id="responsive_slide_container_1" data-slide-index="1">
-                    <a class="container-close-btn" href="javascript:void(0);">
-                        <img class="container-close-btn-img" src="assets/img/close.png" alt="Close Button">
+            <div id="responsive_content" style="display: none;">
+                <div class='responsive-container-wrapper' id='responsive_container_wrapper'></div> 
+                
+                <div class='responsive-slide-container' id='responsive_slide_container_1' data-slide-index='1'>
+                    <a class='container-close-btn' href='javascript:void(0);'>
+                        <img class='container-close-btn-img' src='assets/img/close.png' alt='Close Button'>
                     </a>
-                    <div class="text">
-                        <h3 class="title" data-i18n="container_name">Name</h3>
-                        <p class="description" data-i18n="container_description">Description</p>
+                    <div class='text'>
+                        <h3 class='title' data-i18n='responsive_container_name'>Slender BM Merch</h3>
+                        <p class='description' data-i18n='responsive_container_description'>Slender BM Merch is an online store which sells branded merch, such as, t-shirts, bracelets, mugs, etc. You can check it out at <a href="https://slenderbm.ge">slenderbm.ge</a></p>
                     </div>
                 </div>
             </div>
-
-            <div class="container-wrapper" id="container_wrapper">
-                <div class="slide-container" id="slide_container_1" data-slide-index="1">
-                    <a class="container-close-btn" href="javascript:void(0);">
-                        <img class="container-close-btn-img" src="assets/img/close.png" alt="Close Button">
+            
+            <div id="desktop_content" style="display: none;">
+                <div class='container-wrapper' id='container_wrapper'></div>
+                
+                <div class='slide-container' id='slide_container_1' data-slide-index='1'>
+                    <a class='container-close-btn' href='javascript:void(0);'>
+                        <img class='container-close-btn-img' src='assets/img/close.png' alt='Close Button'>
                     </a>
-                    <div class="text">
-                        <h3 class="title" data-i18n="container_name">Name</h3>
-                        <p class="description" data-i18n="container_description">Description</p>
+                    <div class='text'>
+                        <h3 class='title' data-i18n='container_name'>Slender BM Merch</h3>
+                        <p class='description' data-i18n='container_description'>Slender BM Merch is an online store which sells branded merch, such as, t-shirts, bracelets, mugs, etc. You can check it out at <a href="https://slenderbm.ge">slenderbm.ge</a></p>
                     </div>
                 </div>
             </div>
@@ -188,9 +239,9 @@
             <a class="phone-number" href="tel:+995551026419" style="font-family: 'BPG ExtraSquare Mtavruli';">551-02-64-19</a>
         </div>
     </footer>
-    <script src="assets/js/script.js"></script>
-    <script src="assets/js/swiper.js"></script>
-    <script src="assets/js/switch_language.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="./assets/js/switch_language.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.net.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
