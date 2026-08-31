@@ -19,12 +19,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
             services_title: 'I can make any type of website',
             landing: 'Landing Pages',
+            landing_description: 'Landing pages of products at sale for advertisement',
             corporate: 'Company\'s corporate website',
+            corporate_description: 'Company\'s corporate websites that represents company\'s purpose, services, history, etc.',
             online_shop: 'Multifunctional Online Shop',
+            online_shop_description: 'Online Web Store with everything necessary, integrated payment system, user authorization mechanism, etc.',
             other: 'Other type of Websites',
+            other_description: 'Other types of websites',
 
             container_title: 'My Work',
             container_subtitle: 'Click on the slide for details',
+            container_name: 'Slender BM Merch',
+            container_description: 'Slender BM Merch is an online store which sells branded merch, such as, t-shirts, bracelets, mugs, etc. You can check it out at <a href="https://slenderbm.ge">slenderbm.ge</a>',
+            responsive_container_name: 'Slender BM Merch',
+            responsive_container_description: 'Slender BM Merch is an online store which sells branded merch, such as, t-shirts, bracelets, mugs, etc. You can check it out at <a href="https://slenderbm.ge">slenderbm.ge</a>',
 
             label_full_name: 'Full Name/Company Name',
             label_email: 'Email',
@@ -68,12 +76,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
             services_title: 'შემიძლია დავამზადო ნებისმიერი ტიპის ვებსაიტი',
             landing: '"Landing" გვერდები',
+            landing_description: 'Landing გვერდები ონლაინ მაღაზიაზე განთავსებული საქონლის რეკლამისთვის განკუთვნილი გვერდი პროდუქტის აღწერილობით',
             corporate: 'კომპანიის კორპორატიული ვებსაიტი',
+            corporate_description: 'კომპანიის კორპორატიული ვებსაიტი, სადაც განთავსებულია ინფორმაცია მისი შექმნის ისტორიაზე, მის მიზანზე, გუნდზე და სხვა კომპონენტებზე',
             online_shop: 'მრავალფუნქციური ონლაინ მაღაზია',
+            online_shop_description: 'ონლაინ მაღაზია აღჭურვილი ყველა საჭირო მექანიზმით, როგორიცაა, გადახდის სისტემა, მომხმარებელთა ავტორიზაციის მექანიზმი, გადახდების ისტორია და ა.შ.',
             other: 'სხვა ტიპის ვებსაიტები',
+            other_description: 'სხვა დანიშნულების მქონე ვებსაიტები',
 
             container_title: 'ჩემი ნამუშევრები',
             container_subtitle: 'დააჭირეთ სლაიდზე დეტალების სანახავად',
+            container_name: 'Slender BM Merch',
+            container_description: 'Slender BM Merch წარმოადგენს ონლაინ მაღაზიას, სადაც იყიდება ბრენდირებული მერჩი და მოიცავს მაისურებს, სამაჯურებს, ჭიქებს და ა.შ. ვებსაიტი შეგიძლიათ ნახოთ ამ მისამართზე: <a href="https://slenderbm.ge">slenderbm.ge</a>',
+            responsive_container_name: 'Slender BM Merch',
+            responsive_container_description: 'Slender BM Merch წარმოადგენს ონლაინ მაღაზიას, სადაც იყიდება ბრენდირებული მერჩი და მოიცავს მაისურებს, სამაჯურებს, ჭიქებს და ა.შ. ვებსაიტი შეგიძლიათ ნახოთ ამ მისამართზე: <a href="https://slenderbm.ge">slenderbm.ge</a>',            
 
             label_full_name: 'სახელი და გვარი /<br>კომპანიის სახელწოდება',
             label_email: 'ელ. ფოსტა',
