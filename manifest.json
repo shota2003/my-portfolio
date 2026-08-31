@@ -1,0 +1,15 @@
+{
+    "name": "Portfolio - Shota Kurdgelashvili",
+    "short_name": "Portfolio",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#001329",
+    "theme_color": "#00346cff",
+    "icons": [
+        {
+            "src": "./assets/icon/favicon.ico",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}
