@@ -52,11 +52,11 @@ require './db_connection.php';
         }
         ?>
 
-        <div class="lang-toggle" onclick="changeLanguage('<?php echo $setLanguage; ?>'); location.reload();" title="<?php echo $lang['lang_btn_title']; ?>">
+        <div class="lang-toggle" title="<?php echo $lang['lang_btn_title']; ?>">
             <?php if ($_SESSION['lang'] === 'ka') { ?>
-            <a class="user-lang" id="lang_toggle" href="javascript:void(0);"><img class="georgian_flag" src="./img/Flag_of_Georgia.svg" width="24" alt="Georgia"> ქარ</a>
+            <a class="user-lang" id="lang_toggle" href="?lang=en"><img class="uk_flag" src="./img/Flag_of_the_United_Kingdom.svg" width="24" alt="UK"> ENG</a>
             <?php } else { ?>
-            <a class="user-lang" id="lang_toggle" href="javascript:void(0);"><img class="uk_flag" src="./img/Flag_of_the_United_Kingdom.svg" width="24" alt="UK"> ENG</a>
+            <a class="user-lang" id="lang_toggle" href="?lang=ka"><img class="georgian_flag" src="./img/Flag_of_Georgia.svg" width="24" alt="Georgia"> ქარ</a>
             <?php } ?>
         </div>
     </header>
@@ -90,9 +90,9 @@ require './db_connection.php';
 
             <div class="lang-toggle-responsive" onclick="changeLanguage('<?php echo $setLanguage; ?>'); location.reload();">
                 <?php if ($_SESSION['lang'] === 'ka') { ?>
-                <a id="lang_toggle_responsive" href="javascript:void(0);"><img class="georgian_flag" src="./img/Flag_of_Georgia.svg" width="24" alt="Georgia"> ქარ</a>
-                <?php } else { ?>
                 <a id="lang_toggle_responsive" href="javascript:void(0);"><img class="georgian_flag" src="./img/Flag_of_the_United_Kingdom.svg" width="24" alt="Georgia"> ENG</a>
+                <?php } else { ?>
+                <a id="lang_toggle_responsive" href="javascript:void(0);"><img class="georgian_flag" src="./img/Flag_of_Georgia.svg" width="24" alt="Georgia"> ქარ</a>
                 <?php } ?>
             </div>
         </section>
@@ -317,21 +317,6 @@ require './db_connection.php';
             color: 0x3f84ff,
             backgroundColor: 0x1329
         })
-    </script>
-    <script>
-        function changeLanguage(value) {
-            jQuery.ajax({
-                type: "POST",
-                url: "change_language.php",
-                data: { lang: value },
-                success: function(response) {
-                    console.log(response);
-                },
-                error: function(xhr, status, error) {
-                    console.error("An error occurred: " + error);
-                }
-            });
-        }
     </script>
     <script>
         AOS.init();
