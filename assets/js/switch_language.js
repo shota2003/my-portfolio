@@ -115,7 +115,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    const switcher = document.getElementById("language-switcher");
+    const switcherDesktop = document.getElementById("language-switcher");
+    const switcherResponsive = document.getElementById("language-switcher-responsive");
 
     function changeLanguage(lang) {
         const elements = document.querySelectorAll("[data-i18n]");
@@ -132,16 +133,19 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem("preferredLanguage", lang);
     }
 
-    switcher.addEventListener("change", (e) => {
+    switcherDesktop.addEventListener("change", (e) => {
+        changeLanguage(e.target.value);
+    });
+
+    switcherResponsive.addEventListener("change", (e) => {
         changeLanguage(e.target.value);
     });
 
     const savedLang = localStorage.getItem("preferredLanguage");
     const browserLang = navigator.language.split("-")[0];
     
-    const defaultLang = savedLang || (translations[browserLang] ? browserLang : "en");
-    
-    switcher.value = defaultLang;
+    let defaultLang = savedLang || (translations[browserLang] ? browserLang : "en");
+    defaultLang = switcherDesktop.value || switcherResponsive.value;
     
     changeLanguage(defaultLang);
 })
