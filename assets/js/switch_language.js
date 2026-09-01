@@ -120,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function changeLanguage(lang) {
         const elements = document.querySelectorAll("[data-i18n]");
-        const faviconHref = document.getElementById("favicon_href");
+        const favicon = document.getElementById("favicon");
         
         elements.forEach(element => {
             const key = element.getAttribute("data-i18n");
@@ -132,9 +132,9 @@ document.addEventListener('DOMContentLoaded', () => {
         document.documentElement.lang = lang;
 
         if (lang === 'ka') {
-            faviconHref.href = 'assets/icon/favicon_ka.png';
+            favicon.href = 'assets/icon/favicon_ka.png';
         } else {
-            faviconHref.href = 'assets/icon/favicon_en.png';
+            favicon.href = 'assets/icon/favicon_en.png';
         }
         
         localStorage.setItem("preferredLanguage", lang);
