@@ -133,8 +133,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (lang === 'ka') {
             favicon.href = 'assets/icon/favicon_ka.png';
+            window.history.pushState({ path: '/ka' }, '', '/ka');
         } else {
             favicon.href = 'assets/icon/favicon_en.png';
+            window.history.pushState({ path: '/' }, '', '/');
         }
         
         localStorage.setItem("preferredLanguage", lang);
